@@ -1,0 +1,15 @@
+ANNOTATION (2026-10-01, owner-approved): TEST ARTEFACT, NOT A REGISTERED LOOK
+
+The witness files under looks/b27c50568e6b6cd85dbe6cbbc348a36d/
+  1-open.txt  (commit 652a6406, event: open,  seq 1)
+  2-spend.txt (commit 9aa98f3e, event: spend, seq 2)
+were pushed by a software test: cut #10 check C3(b), look_id "cut10-test-look-001",
+run against a TEMPORARY ledger. The ledger tool pushed them anyway (defect BUG-102,
+fixed so that only the canonical ledger publishes; tests now use a no-op client, RT-07).
+
+They belong to NO registered look and MUST be EXCLUDED from any look count, audit or
+summary. They do not affect any real look: every real look is verified against the
+canonical ledger's own chain, which these lines are not part of.
+
+History is left intact on purpose: this repository is append-only evidence, so the
+test files are annotated rather than deleted.
