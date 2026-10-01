@@ -1,0 +1,15 @@
+ANNOTATION (2026-10-01): ALL WITNESS ENTRIES TO DATE ARE TESTS; NO REGISTERED LOOK HAS EVER BEEN WITNESSED
+
+As of 2026-10-01 the canonical look ledger is EMPTY: no registered look has ever been opened
+or spent. Every looks/<witness_id>/ entry in this repository so far is a test artefact:
+
+  looks/c134f214dbb7ff4ae3d30a923fe73b3e/  (2026-09-27 21:28Z, commits 77fd45f3, cd6b7811)
+      deliberate live verification of the witness route when it was built (F-80g / QT-212).
+  looks/15cc59abdb5ebecc6d18bf56c3b63e04/  (2026-10-01 20:40Z, commits 86250dc1, 26432cca)
+      accidental push from a cut #10 test run against a temporary ledger (defect BUG-102).
+  looks/b27c50568e6b6cd85dbe6cbbc348a36d/  (2026-10-01 20:42Z, commits 652a6406, 9aa98f3e)
+      accidental push from cut #10 check C3(b) (see the companion annotation).
+
+All three MUST be excluded from any look count. Real looks will be verified against the
+canonical ledger's own hash chain, which none of these lines belong to. History is kept
+intact on purpose; this file only annotates.
